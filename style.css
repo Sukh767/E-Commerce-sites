@@ -1,0 +1,661 @@
+body{
+  padding-top: 95px;
+  /* height: 4000px;*/
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  padding-left: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+  background-color: aliceblue;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.header-list-nav ul{
+  display: flex;
+
+}
+
+.header-list-nav ul li{
+  list-style-type: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+.header-list-nav ul a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.2s ease;
+}
+
+.header-list-nav ul a:hover,
+.header-list-nav ul a.active{
+  color: #088178;
+  content: "";
+}
+
+.header-list-icon a{
+  font-size: 18px;
+  color: #1a1a1a;
+  padding-left: 20px;
+  transition: 0.3s ease;
+}
+
+.header-list-icon a:hover{
+  color: #088178;
+
+}
+
+.header-list-nav ul li a:hover::after,
+.header-list-nav ul li a.active::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#hero{
+  background-image: url(images/background-images/Green\ Modern\ Spring\ Sale\ Banner\ Landscape.png);
+  height: 70vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 80px;
+
+}
+#hero h4{
+  color: rgba(86, 86, 86, 0.91);
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
+#hero h2{
+  font-size: 60px;
+  padding-bottom: 10px;
+}
+
+#hero h1{
+  color: #088178;
+  font-size: 70px;
+}
+
+#hero button{
+  background-color: transparent;
+  background-image: url(./images/button.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 260px;
+  height: 60px;
+  border: 0;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #088178;
+  padding: 14px 65px 14px 65px;
+  
+}
+
+#features{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+#features .f-box{
+  width: 130px;
+  height: 150px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  border: 1px solid #cce7d0;
+  cursor: pointer;
+  margin: 15px 0;
+  transition: box-shadow 0.3s;
+
+}
+
+#features .f-box:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#features .f-box h6{
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #088178;
+  background-color: #faab6db6;
+}
+
+#features .f-box img{
+  height: 40px;
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.features-product-title{
+  text-align: center;
+  
+}
+#featured-title{
+  font-size: 34px;
+}
+
+#para{
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.pro-collection{
+  margin-top: 45px;
+}
+.product-section .pro-collection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 60px;
+
+}
+
+.product-section .product-cart{
+  width: 280px;
+  border: 1px solid #ebebeb;
+  padding: 13px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 20px 20px 30px rgb(0,0,0,0.02);
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.product-section .product-cart:hover{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+}
+
+.product-section .product-cart span{
+  color:#969696;
+  font-weight: 500;
+  line-height: 30px;
+
+}
+
+.product-section .product-cart h4{
+  font-size: 18px;
+  color:rgb(41,41,41);
+}
+.product-section .product-cart img{
+  width: 100%;
+  border-radius: 25px;
+  
+}
+
+.product-section .product-cart .stars{
+  color:#e6ae2c;
+  padding:6px 0;
+}
+
+.product-section .product-cart .price{
+  color:#088178;
+  padding: 6px 0;;
+}
+
+.product-section .product-cart .buy-icon{
+  color: #088178;
+  background-color: #c7e9e75e;
+  padding: 15px;
+  position: absolute;
+  border-radius: 50%;
+  right: 10px;
+  bottom: 10px;
+}
+
+#offer-banner{
+  background-image: url(images/background-images/Black\ Orange\ Elegant\ Sale.png);
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+#offer-banner h4{
+  color:#eaebf0;
+
+}
+#offer-banner h2{
+  color:#eaebf0;
+  opacity: 70%;
+  padding: 20px,0; 
+  margin-bottom: 10px;
+}
+
+button.normal{
+  transition: all .5s ease;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  border: 3px solid white;
+
+}
+
+.normal:hover{
+  color: #001F3F;
+  background-color: #fff;
+  opacity: 60%;
+}
+
+#banners{
+  margin: 0 60px;
+}
+
+#banners h2,h4,span{
+  color:rgb(248, 248, 248);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#banners .big-banners{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#banners .big-banners div{
+  margin: 15px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  background-size: cover;
+  backdrop-filter: blur(8%);
+}
+
+#banners .big-banners-1{
+  background-image: url(images/background-images/women-red.avif);
+}
+#banners .big-banners-2{
+  background-image: url(images/background-images/Mustard\ New.jpg);
+}
+#banners .small-banners-1{
+  background-image: url(images/background-images/big\ banner-1.jpg);
+}
+#banners .small-banners-2{
+  background-image: url(images/background-images/Fashion\ banner.jpg);
+}
+#banners .small-banners-3{
+  background-image: url(images/background-images/Gray\ Minimalist.png);
+}
+
+#banners .big-banners button{
+  margin-top: 50px;
+  padding: 12px 20px ;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  color: rgb(248,248,248);
+  border:1px rgb(248, 248, 248);
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+#banners .big-banners div:hover button{
+  background-color: transparent;
+  border: 3px solid #000000;
+}
+#banners .small-banners{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#banners .small-banners div{
+  width: 375px;
+  height: 200px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-size: cover;
+}
+#banners .small-banners h2{
+  font-size: 25px;
+  margin-left: 10px;
+  color: #088178;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#banners .small-banners h5{
+  color: #771818;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 10px;
+  font-weight: none;
+}
+#banners .small-banners p{
+  font-size: 20px;
+  margin-left: 10px;
+  color: #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.download{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.download .apple-img{
+  height: 50px;
+  width: 150px;
+}
+.download .playstore-img{
+  height: 73px;
+}
+#footer{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  align-self: flex-start;
+  justify-content: space-between;
+  background-color: #ececec;
+}
+#footer .footer-logo{
+  height: 70px;
+  width: 110px;
+}
+@import url('https://fonts.cdnfonts.com/css/acumin-pro');
+#footer p, #footer a{
+  font-family: acumin-pro, system-ui, sans-serif;
+  text-decoration:none;
+  color: rgb(109,109,109);
+}
+#footer a:hover{
+  color: #088178;
+}
+#footer .about a{
+  display: block;
+  padding: 8px 0;
+}
+#footer .myaccount a{
+  display: block;
+  padding: 8px 0;
+}
+#footer .download img {
+  border-radius: 7px;
+
+}
+.socials a i {
+  font-size: 32px; /* Adjust the size as needed */
+  margin-right: 10px; /* Optional: Add some space between the icons */
+}
+.payment-icons a i{
+  font-size: 32px;
+  margin-right: 10px;
+}
+#signup-banner{
+  height: 160px;
+  width: 100%;
+  background-image: url(images/background-images/2.png);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#signup-banner .signup-div{
+  padding: 35px;
+  color:teal;
+}
+
+#signup-banner .email-input-div{
+  padding: 12px;
+  margin-right: 40px;
+}
+
+#signup-banner .email-input-class{
+  padding: 12px 20px;
+  width: 260px;
+  height: 40px;
+}
+.email-input-div{
+  display: flex;
+  align-items: center;
+
+}
+.email-input-div 
+.signup-class{
+  padding: 12px 20px;
+  height: 40px;
+  width: 100px;
+  margin-left: -1px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #088178;
+  transition: 0.03s linear;
+  cursor: pointer;
+}
+
+.email-input-div:hover button{
+  color: whitesmoke;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #088178;
+}
+
+/* Search button css */
+
+::selection {
+  background: #212129;
+}
+
+.search-wrapper {
+  position: absolute;
+  margin-left: -100px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  
+}
+
+.search-wrapper .input-holder {
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+  background: aliceblue;
+  border-radius: 6px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.search-wrapper.active .input-holder {
+  width: 450px;
+  border-radius: 50px;
+  background: rgba(218, 235, 254, 0.94);
+  transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57);
+}
+.search-wrapper .input-holder .search-input {
+  width: 100%;
+  height: 50px;
+  padding: 0px 70px 0 20px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: transparent;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Open Sans", Arial, Verdana;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
+  transform: translate(0, 60px);
+  transition: all 0.3s cubic-bezier(0, 0.105, 0.035, 1.57);
+  transition-delay: 0.3s;
+}
+.search-wrapper.active .input-holder .search-input {
+  opacity: 1;
+  transform: translate(0, 10px);
+}
+.search-wrapper .input-holder .search-icon {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  padding: 0px;
+  outline: none;
+  position: relative;
+  z-index: 2;
+  float: right;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.search-wrapper.active .input-holder .search-icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 30px;
+}
+.search-wrapper .input-holder .search-icon span {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  transform: rotate(45deg);
+  transition: all 0.4s cubic-bezier(0.65, -0.6, 0.24, 1.65);
+}
+.search-wrapper.active .input-holder .search-icon span {
+  transform: rotate(-45deg);
+}
+.search-wrapper .input-holder .search-icon span::before,
+.search-wrapper .input-holder .search-icon span::after {
+  position: absolute;
+  content: "";
+}
+.search-wrapper .input-holder .search-icon span::before {
+  width: 4px;
+  height: 11px;
+  left: 9px;
+  top: 18px;
+  border-radius: 2px;
+  background: #088178;
+}
+.search-wrapper .input-holder .search-icon span::after {
+  width: 14px;
+  height: 14px;
+  left: 0px;
+  top: 0px;
+  border-radius: 16px;
+  border: 4px solid #088178;
+}
+.search-wrapper .close {
+  position: absolute;
+  z-index: 1;
+  top: 24px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transform: rotate(-180deg);
+  transition: all 0.3s cubic-bezier(0.285, -0.45, 0.935, 0.11);
+  transition-delay: 0.2s;
+}
+.search-wrapper.active .close {
+  right: -50px;
+  transform: rotate(45deg);
+  transition: all 0.6s cubic-bezier(0, 0.105, 0.035, 1.57);
+  transition-delay: 0.5s;
+}
+.search-wrapper .close::before,
+.search-wrapper .close::after {
+  position: absolute;
+  content: "";
+  background: #088178;
+  border-radius: 2px;
+}
+.search-wrapper .close::before {
+  width: 5px;
+  height: 25px;
+  left: 10px;
+  top: 0px;
+}
+.search-wrapper .close::after {
+  width: 25px;
+  height: 5px;
+  left: 0px;
+  top: 10px;
+}
+
+.brand-logo-class{
+  height: 50px;
+  width: 70px;  
+}
